@@ -311,10 +311,10 @@ class InsightsGUI:
 
     async def _do_analysis(self, user_id: str, category: str, focus: Optional[str], paper_ids: Optional[list]) -> dict:
         """Perform the actual analysis"""
-        from .config import settings
+        from config import settings
         settings.validate_for_analysis()  # Ensure OPENAI_API_KEY is set
 
-        from .paper_insights import PaperInsightsService
+        from paper_insights import PaperInsightsService
 
         service = PaperInsightsService(paper_count=50)
 

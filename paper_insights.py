@@ -13,7 +13,7 @@ This version works without SQLAlchemy/database session - uses direct paper count
 from typing import List, Dict, Optional, Any
 from dataclasses import dataclass
 import logging
-from .llama_index_service import LlamaIndexService
+from llama_index_service import LlamaIndexService
 
 logger = logging.getLogger(__name__)
 

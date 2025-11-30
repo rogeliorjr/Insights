@@ -4,7 +4,7 @@ import asyncio
 import os
 from typing import List, Optional, Dict, Any
 
-from .config import settings
+from config import settings
 from llama_index.core import VectorStoreIndex, Document, Settings, StorageContext
 from llama_index.core.vector_stores import MetadataFilters, MetadataFilter, FilterOperator
 from llama_index.embeddings.openai import OpenAIEmbedding

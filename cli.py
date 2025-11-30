@@ -110,7 +110,7 @@ async def run_analysis(
 ) -> dict:
     """Run the specified analysis category"""
 
-    from .paper_insights import PaperInsightsService
+    from paper_insights import PaperInsightsService
 
     service = PaperInsightsService(paper_count=paper_count)
 

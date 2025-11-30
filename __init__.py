@@ -10,9 +10,9 @@ It can analyze research papers for:
 - Novel Connections
 """
 
-from .paper_insights import PaperInsightsService, InsightCategory
-from .llama_index_service import LlamaIndexService
-from .config import settings
+from paper_insights import PaperInsightsService, InsightCategory
+from llama_index_service import LlamaIndexService
+from config import settings
 
 __all__ = [
     "PaperInsightsService",
@@ -25,5 +25,5 @@ __all__ = [
 
 def run_gui():
     """Launch the GUI application"""
-    from .gui import main
+    from gui import main
     main()
